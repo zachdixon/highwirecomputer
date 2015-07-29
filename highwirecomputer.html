@@ -1,0 +1,188 @@
+<head>
+  <title>High Wire Computer Services</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+  {{> layout}}
+</body>
+
+<template name="layout">
+  <main>
+    {{> nav}}
+    {{> hero}}
+    {{> services}}
+    {{> about}}
+    {{> contact}}
+    {{> footer}}
+  </main>
+</template>
+
+<template name="nav">
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper grey darken-4">
+        <div class="row container">
+          <a href="#hero" class="brand-logo" data-scroll>High Wire</a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#services" class="waves-effect waves-light" data-scroll>Services</a></li>
+            <li><a href="#about" class="waves-effect waves-light" data-scroll>About Us</a></li>
+            <li><a href="#contact" class="waves-effect waves-light btn blue darken-4 nav-contact-btn" data-scroll><i class="mdi-communication-phone left"></i>Contact Us</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-nav">
+            <li><a href="#services" class="waves-effect waves-light" data-scroll><i class="mdi-hardware-security left"></i>Services</a></li>
+            <li><a href="#about" class="waves-effect waves-light" data-scroll><i class="mdi-action-info-outline left"></i>About Us</a></li>
+            <li><a href="#contact" class="waves-effect waves-light" data-scroll><i class="mdi-communication-phone left"></i>Contact Us</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </div>
+</template>
+
+<template name="hero">
+  <section id="hero" class="fixed-bg valign-wrapper">
+    <div class="row container">
+      <div class="center-align">
+        <h1 class="white-text text-shadow animated fadeInUp wow" data-wow-delay="100ms">High Wire Computer Services</h1>
+        <h4 class="white-text text-shadow animated fadeInUp wow" data-wow-delay="300ms">Don't call a "geek", call an expert!</h4>
+        <a href="#contact" class="waves-effect grey darken-4 btn btn-action btn-large animated fadeInUp wow" data-scroll data-wow-delay="500ms">Contact Us Today</a>
+      </div>
+    </div>
+  </section>
+</template>
+
+<template name="services">
+  <section id="services" class="grey lighten-3 valign-wrapper">
+    <div class="row container">
+      <div class="col s12">
+        <h2 class="">We offer many services, fit for any business or home user</h2>
+        <p class="">However, our first service is Customer Service! Many IT Support Technicians are rude and short to those that do not have advanced computer knowledge. We demand patience and understanding from our technicians. So you can feel comfortable asking any question, even ones that you might consider "dumb"</p>
+      </div>
+      <div class="col m6 s12">
+        <div class="card grey lighten-5 animated fadeInUp wow" data-wow-delay="300ms">
+          <div class="card-content">
+            <span class="card-title blue-text text-darken-4">Home Services</span>
+            <p>Whether you depend on your computer for work or simply use it for email and internet, you expect a lot from you computer! Let us make computer work for you, not against you!</p>
+            <ul>
+              <li class="animated fadeInLeft wow" data-wow-delay="350ms">Consulting</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="400ms">Training</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="450ms">Remote & onsite supprt</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="500ms">Upgrades</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="550ms">Cabling Services</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="600ms">Contract Client Services</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="650ms">Complete System Builds</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="700ms">Virus / Spyware Removal</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="750ms">Wireless Setup and Security</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="800ms">VPN and Remote Desktop Setup</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="850ms">Hard-drive data imaging</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="950ms">Backup - Onsite and Offsite</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col m6 s12">
+        <div class="card grey lighten-5 animated fadeInUp wow" data-wow-delay="300ms">
+          <div class="card-content">
+            <span class="card-title blue-text text-darken-4">Contract Services</span>
+            <p>Our contract services include complete management of our client's network and computers. Some clients are more hands-on while others are interested in having a trusted partner maintain their network so they can concentrate on their business. Either way, High Wire Computer Services is there for you when you need us with the knowledge you need to make your network secure and stable!</p>
+            <ul>
+              <li class="animated fadeInLeft wow" data-wow-delay="350ms">Windows Server Administration</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="400ms">Router and Switch Support</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="450ms">Firewall Administration and Maintenance</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="500ms">Network Performance Monitoring</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="550ms">Website Design and Maintenance</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="600ms">Exchange Server Administration</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="650ms">Centralized Antivirus Management</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="700ms">Network Design and Setup</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="750ms">Wireless Setup and Security</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="800ms">VPN and Remote Desktop Setup</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </section>
+</template>
+
+<template name="about">
+  <section id="about" class="grey darken-4 valign-wrapper">
+    <div class="row container">
+      <div class="col s12 animated fadeInUp wow" data-wow-delay="200ms">
+        <h2 class="white-text">
+          Provide affordable, knowledgeable IT support to a market overrun with over-priced, under qualified technicians.
+        </h2>
+      </div>
+      <div class="col m4 s12 animated fadeInUp wow" data-wow-delay="300ms">
+        <h5 class="center-align blue-text text-accent-1">Affordable</h5>
+        <p class="grey-text text-lighten-3">
+          High Wire Computer Services was designed as an alternative to over-priced, under qualified Geeks. All companies, big or small, require computer support. You have many options from cheap, such as an individual to expensive, such as some "Geek" companies. We offer affordable support from a real company with certified support technicians.
+        </p>
+      </div>
+      <div class="col m4 s12 animated fadeInUp wow" data-wow-delay="900ms">
+        <h5 class="center-align blue-text text-accent-1">Specialized</h5>
+        <p class="grey-text text-lighten-3">
+          Our technicians are trained in the hardware aspect of computer and network equipment. We can assist with all versions of Microsoft operating and server systems. We partner with other providers such as AVG to keep your machines working properly and free from unwanted software.
+        </p>
+      </div>
+      <div class="col m4 s12 animated fadeInUp wow" data-wow-delay="1500ms">
+        <h5 class="center-align blue-text text-accent-1">Why wait?</h5>
+        <p class="grey-text text-lighten-3">
+          Contact us today for a free estimate for your computer and network needs!
+        </p>
+        <div class="right-align"><a href="#contact" class="waves-effect blue darken-4 btn btn-action" data-scroll>Contact Us</a></div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<template name="contact">
+  <section id="contact" class="grey lighten-3 valign-wrapper">
+    <div class="row container">
+      <div class="col s12">
+        <h4 class="blue-text text-darken-4 center-align">We look forward to providing your IT Support needs!</h4>
+      </div>
+      <div class="col m6 s12 animated wow fadeInUp">
+        <p>Please fill out the contact form and we will get back to you as soon as possible</p>
+        <p>Feel free to give us a call during business hours: <a href="tel:972-742-9330">972-742-9330</a></p>
+      </div>
+      <form id="form-contact" class="col m6 s12 animated wow fadeInUp card">
+        <h2 class="blue-text text-darken-4">Contact Us Now</h2>
+        <h4 class="feedback-text">Thanks for contacting us! We'll get back to you as soon as possible</h4>
+        <div class="row input-row">
+          <div class="input-field col s12">
+            <i class="mdi-action-account-circle prefix"></i>
+            <input id="contact-name" type="text" class="validate" name="name" required>
+            <label for="contact-name">Name</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="mdi-communication-email prefix"></i>
+            <input id="contact-email" type="email" class="validate" name="email" required>
+            <label for="contact-email">Email</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="mdi-communication-message prefix"></i>
+            <textarea id="contact-message" class="materialize-textarea" name="message" required></textarea>
+            <label for="contact-message">Message</label>
+          </div>
+          <div class="col s12 right-align">
+            <button type="submit" class="waves-effect waves-light blue darken-4 btn btn-submit-contact">Send Message <i class="mdi-content-send right"></i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</template>
+
+<template name="footer">
+  <footer class="page-footer blue darken-4">
+    <div class="footer-copyright">
+      <div class="container text-blue text-blue-accent-1">
+      © 2015 High Wire Computer Services
+      </div>
+    </div>
+  </footer>
+</template>
