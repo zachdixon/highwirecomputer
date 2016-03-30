@@ -28,3 +28,4 @@ check
 materialize:materialize@=0.97.0
 standard-minifier-css
 standard-minifier-js
+mongo
