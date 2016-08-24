@@ -10,8 +10,8 @@ module.exports = {
   },
 
   meteor: {
-    name: 'app',
-    path: '../app',
+    name: 'highwirecomputer',
+    path: '../highwirecomputer',
     servers: {
       one: {}
     },
