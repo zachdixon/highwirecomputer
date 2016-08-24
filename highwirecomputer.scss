@@ -35,12 +35,43 @@ nav {
   .btn {
     margin: 0;
   }
-  .nav-contact-btn {
-    padding-left: 15px;
+  .pay-invoice-btn {
+    padding: 0;
+    border-radius: 0;
+    font-size: 1.5em;
+
+    input[type="submit"] {
+      border: none;
+      background: none;
+      box-shadow: none;
+      padding: 0 10px;
+      height: 100%;
+      font-style: italic;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.side-nav {
+  .pay-invoice-btn {
+    height: 56px;
+    line-height: 56px;
+    width: 100%;
+    text-align: left;
+    padding: 0 20px;
+    box-shadow: none;
+  }
+  .btn-authorize-net {
+    margin: 15px auto;
+    display: block;
+    height: 160px;
+    padding: 15px !important;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    width: calc(100% - 30px);
+
     i {
-      font-size: 1.5em;
-      height: auto;
-      line-height: inherit;
+      font-size: 4rem;
     }
   }
 }
@@ -78,10 +109,15 @@ nav {
 
 #hero {
   background-image: url(/images/hero.jpg);
-  .container {
-    background: rgba(13, 71, 161, 0.75);
-    border-radius: 5px;
-    box-shadow: 0 5px 5px 2px rgba(0,0,0,0.7);
+  position: relative;
+  &:before {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(13, 71, 161, 0.35);
+    position: absolute;
   }
   h1 {
     font-weight: 200;
@@ -90,6 +126,46 @@ nav {
     font-weight: bold;
     text-transform: uppercase;
   }
+  .scroll-down {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    font-size: 4.4em;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 15px 15px 0px;
+    border-radius: 50% 50% 0 0;
+    z-index: 2;
+    left: calc(50% - 48px);
+    transform: scale(1);
+    animation: jump 4500ms infinite;
+    animation-delay: 3s;
+
+    &:hover {
+      background: #fff;
+    }
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(.95);
+  }
+  9% {
+    transform: scale(1.25);
+  }
+  11% {
+    transform: scale(.95);
+  }
+  20% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+
 }
 
 #services {
@@ -109,6 +185,48 @@ nav {
 .feedback-text {
   display: none;
   margin: 20px 0;
+}
+
+#about {
+  position: relative;
+  padding-bottom: 120px;
+}
+
+#contact {
+  padding-top: 120px;
+}
+
+.floating-box {
+  position: absolute;
+  bottom: 0;
+  transform: translate3d(0%, 50%, 0);
+  left: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  & > div {
+    padding: 20px;
+  }
+
+  i {
+    font-size: 10vmin !important;
+  }
+
+  h2 {
+    margin: 2vmin;
+    font-size: 4vmin;
+  }
+
+  form {
+
+    button[type="submit"] {
+      margin: 0;
+      padding: 0 15px !important;
+    }
+  }
 }
 
 
@@ -153,5 +271,41 @@ footer.page-footer {
   }
   h4 {
     font-size: 26px;
+  }
+}
+
+
+// Authorize.net Forms
+form[name="PrePage"] {
+  input[type="submit"] {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+.btn-authorize-net {
+  padding: 0 !important;
+
+  &.btn-large input[type="submit"] {
+    padding: 0 2rem;
+    height: 54px;
+    line-height: 54px;
+  }
+}
+
+// Slick
+.slick-slide {
+  padding: 0 20px;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 40px;
+}
+
+@media (max-width: 675px) {
+  .slick-prev, .slick-next {
+    display: none !important;
   }
 }

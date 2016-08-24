@@ -1,0 +1,20 @@
+{
+  "name": "highwirecomputer",
+  "version": "1.0.0",
+  "description": "High Wire Computer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachdixon/highwirecomputer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zachdixon/highwirecomputer/issues"
+  },
+  "homepage": "https://github.com/zachdixon/highwirecomputer#readme",
+  "dependencies": {}
+}

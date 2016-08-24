@@ -1,6 +1,9 @@
 <head>
   <title>High Wire Computer Services</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -24,16 +27,40 @@
       <div class="nav-wrapper grey darken-4">
         <div class="row container">
           <a href="#hero" class="brand-logo" data-scroll>High Wire</a>
-          <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="#services" class="waves-effect waves-light" data-scroll>Services</a></li>
             <li><a href="#about" class="waves-effect waves-light" data-scroll>About Us</a></li>
-            <li><a href="#contact" class="waves-effect waves-light btn blue darken-4 nav-contact-btn" data-scroll><i class="mdi-communication-phone left"></i>Contact Us</a></li>
+            <li><a href="#contact" class="waves-effect waves-light" data-scroll>Contact Us</a></li>
+            <li>
+              <form name="PrePage" method = "post" action = "https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+                <input type = "hidden" name = "LinkId" value ="1247ecdb-44cd-43a7-9033-73de54ebf259" />
+                <input type = "submit" value = "Pay Invoice" class="waves-effect waves-light btn blue darken-4 pay-invoice-btn"/>
+              </form>
+            </li>
           </ul>
           <ul class="side-nav" id="mobile-nav">
-            <li><a href="#services" class="waves-effect waves-light" data-scroll><i class="mdi-hardware-security left"></i>Services</a></li>
-            <li><a href="#about" class="waves-effect waves-light" data-scroll><i class="mdi-action-info-outline left"></i>About Us</a></li>
-            <li><a href="#contact" class="waves-effect waves-light" data-scroll><i class="mdi-communication-phone left"></i>Contact Us</a></li>
+            <li><a href="#services" class="waves-effect waves-light" data-scroll><i class="material-icons left">security</i>Services</a></li>
+            <li><a href="#about" class="waves-effect waves-light" data-scroll><i class="material-icons left">info_outline</i>About Us</a></li>
+            <li><a href="#contact" class="waves-effect waves-light" data-scroll><i class="material-icons left">phone</i>Contact Us</a></li>
+            <li>
+              <form name="PrePage" method = "post" action = "https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+                <input type = "hidden" name = "LinkId" value ="1247ecdb-44cd-43a7-9033-73de54ebf259" />
+                <button type = "submit" class="waves-effect waves-light btn blue darken-4 pay-invoice-btn">
+                  <i class="material-icons left">attach_money</i>
+                  Pay Invoice
+                </button>
+              </form>
+            </li>
+            <li>
+              <form name="PrePage" method = "post" action = "https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+                <input type = "hidden" name = "LinkId" value ="23ab8797-76b3-4495-a4b4-5f084d75efc2" />
+                <button type = "submit" class="waves-effect grey lighten-3 blue-text text-darken-4 btn btn-action btn-large btn-authorize-net">
+                  <i class="material-icons">backup</i>
+                  Get Livedrive Cloud Backup Now
+                </button>
+              </form>
+            </li>
           </ul>
         </div>
         
@@ -50,7 +77,16 @@
         <h4 class="white-text text-shadow animated fadeInUp wow" data-wow-delay="300ms">Don't call a "geek", call an expert!</h4>
         <a href="#contact" class="waves-effect grey darken-4 btn btn-action btn-large animated fadeInUp wow" data-scroll data-wow-delay="500ms">Contact Us Today</a>
       </div>
+      <div class="center-align">
+        <h1 class="white-text text-shadow">Cloud Backup</h1>
+        <h4 class="white-text text-shadow">Why risk the loss of your data? Protect it with the cloud.</h4>
+        <form name="PrePage" method = "post" action = "https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+          <input type = "hidden" name = "LinkId" value ="23ab8797-76b3-4495-a4b4-5f084d75efc2" />
+          <input type = "submit" value="Get Livedrive Cloud Backup Now" class="waves-effect grey darken-4 btn btn-action btn-large btn-authorize-net"/>
+        </form>
+      </div>
     </div>
+    <i href="#services" class="material-icons scroll-down" data-scroll>keyboard_arrow_down</i>
   </section>
 </template>
 
@@ -79,7 +115,8 @@
               <li class="animated fadeInLeft wow" data-wow-delay="800ms">VPN and Remote Desktop Setup</li>
               <li class="animated fadeInLeft wow" data-wow-delay="850ms">Hard-drive data imaging</li>
               <li class="animated fadeInLeft wow" data-wow-delay="900ms">Onsite Backups</li>
-              <li class="animated fadeInLeft wow" data-wow-delay="950ms">Livedrive Could Backup Services</li>
+              <li class="animated fadeInLeft wow" data-wow-delay="950ms">
+                <form name="PrePage" method = "post" action = "https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx"> <input type = "hidden" name = "LinkId" value ="23ab8797-76b3-4495-a4b4-5f084d75efc2" /> <input type = "submit" value="Livedrive Cloud Backup Services" class="blue-text"/> </form></li>
               <li class="animated fadeInLeft wow" data-wow-delay="1000ms">VoIP Phone Systems</li>
             </ul>
           </div>
@@ -137,6 +174,18 @@
         <div class="right-align"><a href="#contact" class="waves-effect blue darken-4 btn btn-action" data-scroll>Contact Us</a></div>
       </div>
     </div>
+    <div class="row floating-box">
+      <div class="blue darken-4 white-text z-depth-3">
+        <i class="material-icons">backup</i>
+        <h2>Start protecting your data today!</h2>
+        <form name="PrePage" method = "post" action = "https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx">
+          <input type = "hidden" name = "LinkId" value ="23ab8797-76b3-4495-a4b4-5f084d75efc2" />
+          <button type = "submit" class="waves-effect white blue-text text-darken-4 btn btn-action btn-large btn-authorize-net">
+            Get Livedrive Cloud Backup
+          </button>
+        </form>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -155,22 +204,22 @@
         <h4 class="feedback-text">Thanks for contacting us! We'll get back to you as soon as possible</h4>
         <div class="row input-row">
           <div class="input-field col s12">
-            <i class="mdi-action-account-circle prefix"></i>
+            <i class="material-icons prefix">account_circle</i>
             <input id="contact-name" type="text" class="validate" name="name" required>
             <label for="contact-name">Name</label>
           </div>
           <div class="input-field col s12">
-            <i class="mdi-communication-email prefix"></i>
+            <i class="material-icons prefix">email</i>
             <input id="contact-email" type="email" class="validate" name="email" required>
             <label for="contact-email">Email</label>
           </div>
           <div class="input-field col s12">
-            <i class="mdi-communication-message prefix"></i>
+            <i class="material-icons prefix">message</i>
             <textarea id="contact-message" class="materialize-textarea" name="message" required></textarea>
             <label for="contact-message">Message</label>
           </div>
           <div class="col s12 right-align">
-            <button type="submit" class="waves-effect waves-light blue darken-4 btn btn-submit-contact">Send Message <i class="mdi-content-send right"></i></button>
+            <button type="submit" class="waves-effect waves-light blue darken-4 btn btn-submit-contact">Send Message <i class="material-icons right">send</i></button>
           </div>
         </div>
       </form>

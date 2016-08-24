@@ -24,9 +24,11 @@ random@1.0.10
 ejson@1.0.12
 spacebars@1.0.12
 check@1.2.3
-materialize:materialize@=0.97.0
+materialize:materialize@0.97.7
 standard-minifier-css@1.2.0
 standard-minifier-js@1.2.0
 mongo@1.1.11
 fourseven:scss
 shell-server
+modules
+udondan:slick
