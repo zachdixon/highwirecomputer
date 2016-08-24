@@ -2,8 +2,8 @@ module.exports = {
   servers: {
     one: {
       host: '45.55.204.214',
-      username: 'root'
-      // pem:
+      username: 'zach',
+      pem: "~/.ssh/id_rsa"
       // password:
       // or leave blank for authenticate from ssh-agent
     }
@@ -11,7 +11,7 @@ module.exports = {
 
   meteor: {
     name: 'highwirecomputer',
-    path: '../highwirecomputer',
+    path: '/Users/zach/Personal/highwirecomputer',
     servers: {
       one: {}
     },
