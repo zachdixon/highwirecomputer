@@ -2,8 +2,8 @@ module.exports = {
   servers: {
     one: {
       host: '45.55.204.214',
-      username: 'zach',
-      pem: "~/.ssh/id_rsa"
+      username: 'root'
+      // pem: "~/.ssh/id_rsa"
       // password:
       // or leave blank for authenticate from ssh-agent
     }
@@ -19,10 +19,10 @@ module.exports = {
       serverOnly: true,
     },
     env: {
-      ROOT_URL: 'www.highwirecomputer.com',
+      ROOT_URL: 'http://www.highwirecomputer.com',
     },
 
-    //dockerImage: 'kadirahq/meteord'
+    dockerImage: 'abernix/meteord:base',
     deployCheckWaitTime: 60
   }
 };
